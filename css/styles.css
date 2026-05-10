@@ -95,7 +95,7 @@ footer {
 .btn-about:hover {
     background-color: #eeeeee;
     transform: translate(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .footer_bottom {
@@ -409,7 +409,7 @@ article {
 
 /*------- SPECIFIC TO ABOUT_US.HTML -------*/
 
-#about-us .member-card {
+.member-card {
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 20px;
@@ -417,23 +417,25 @@ article {
     margin: 25px auto;
     max-width: 800px;
     text-align: left; 
-    box-shadow: 5px 5px 0px rgba(0,0,0,0.1); 
-    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none;
 }
 
-#about-us .member-card:hover {
-    transform: scale(1.01);
+.member-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
-#about-us .member-card h3 {
-    font-size: 1.5rem;
+.member-card h3 {
+    font-size: 1.3rem;
     color: #000000;
     margin-bottom: 15px;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
 }
 
-#about-us .member-card p {
+.member-card p {
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -444,7 +446,6 @@ article {
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 40px;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.1);
     text-align: left;
     max-width: 850px;
     margin-left: auto;
@@ -534,18 +535,20 @@ article {
     max-width: 800px;
     text-align: left; 
     transition: transform 0.3s ease;
+    box-shadow: none;
 }
 
 .member-card:hover {
     transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .member-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #000000;
-    margin-bottom: 15px;
     border-bottom: 1px solid #eeeeee;
     padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 #project-details article {
@@ -555,8 +558,12 @@ article {
     padding: 30px;
     margin: 30px auto;
     max-width: 850px;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2); 
     text-align: left;
+}
+
+#project-details article:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 #project-details article h3 {
@@ -608,14 +615,16 @@ article {
 
 .module-card:hover {
     transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .module-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     color: #000000;
     border-bottom: 1px solid #eeeeee;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -726,6 +735,59 @@ article {
 
 /*===================================================*/
 
+/*------- SPECIFIC FOR HOME.HTML -------*/
+
+main {
+    text-align: center;
+}
+
+#intro, #details, #academic-goals {
+    padding: 40px, 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#details img, .into-image img {
+    border: 3px solid #000000;
+    border-radius: 20px;
+    margin: 20px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.goals-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.goals-container article{
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3 ease;
+}
+
+.goals-container article:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.goals-container h3 {
+    font-size: 1.3rem;
+    color: #000000;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/*===================================================*/
+
 /*------- FOR ALL -------*/
 img:hover {
     transform: scale(1.02);
@@ -810,4 +872,27 @@ img:hover {
     padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
+}
+
+/*===================================================*/
+
+/*-------- CHATBOT CENTERED (HOME.HTML) --------*/
+
+#chat-interface {
+    margin-top: 60px;
+}
+
+
+#chat-messages {
+    border: 2px solid #000000;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+#chat-input {
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
 }

@@ -11,80 +11,83 @@
 
 <body>
     <header>
-        <div class="topbar">
-            <div class="topbar_container">
-                <div class="topbar_left">
-                    <img src="../img/logo_efrei.png" alt="Efrei Logo" class="logo_img">
-                    <span class="page_name">Computer Science Department</span>
-                </div>
+            <div class="topbar">
+                <div class="topbar_container">
+                    <div class="topbar_left">
+                        <img src="../img/logo_efrei.png" alt="Efrei Logo" class="logo_img">
+                        <span class="page_name">Computer Science Department</span>
+                    </div>
 
-                <div class="topbar_right">
-                    <form class="search_bar">
-                        <input type="text" placeholder="Search..." name="search">
-                        <button type="submit">Submit</button>
-                    </form>
+                    <div class="topbar_right">
+                        <form class="search_bar">
+                            <input type="text" placeholder="Search..." name="search">
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <section id="department">
-            <div class="intro-content">
-                <h1>About Computer Science Departement</h1>
-                <p>Step into the heart of digital innovation where technical mastery meets the leadership of tomorrow.
-                </p>
-                <button type="button" onclick="window.location.href='../html/about_efrei.html';" class="btn">Click to
-                    know more </button>
-            </div>
-
-            <div class="intro-image">
-                <a href="https://www.myefrei.fr">
-                    <img src="../img/image_pc.jpg" alt="Efrei Campus and Portal" height="300" width="600">
-                </a>
-            </div>
-        </section>
-
-        <nav>
-            <a href="./home.html">Home</a>
-            <a href="./faculty.html">Faculty</a>
-            <a href="./course_training.html">Courses & Training</a>
-            <a href="./about_efrei.html">About Efrei</a>
-            <a href="./calendar.html">Calendar</a>
-        </nav>
-    </header>
-
-    <main>
-        <section id="calendrier-intro">
-            <h1>Find out the next deadlines and exams on the Calendar bellow.</h1>
-
-            <div class="calendar-container">
-                <div class="calendar-header">
-                    <button id="prev-month" class="calendar-nav-btn">&lt;</button>
-                    <h2 id="month-year" class="calendar-month-year"></h2>
-                    <button id="next-month" class="calendar-nav-btn">&gt;</button>
+            <section id="department">
+                <div class="intro-content">
+                    <h1>About Computer Science Departement</h1>
+                    <p>Step into the heart of digital innovation where technical mastery meets the leadership of tomorrow.
+                    </p>
+                    <button type="button" onclick="window.location.href='../html/about_efrei.html';" class="btn">Click to
+                        know more </button>
                 </div>
-                <div class="calendar-days-of-week">
-                    <div>Mon</div>
-                    <div>Tue</div>
-                    <div>Wed</div>
-                    <div>Thu</div>
-                    <div>Fri</div>
-                    <div>Sat</div>
-                    <div>Sun</div>
+
+                <div class="intro-image">
+                    <a href="https://www.myefrei.fr">
+                        <img src="../img/image_pc.jpg" alt="Efrei Campus and Portal" height="300" width="600">
+                    </a>
                 </div>
-                <div id="calendar-grid" class="calendar-grid"></div>
+            </section>
+
+            <nav>
+                <a href="./home.html">Home</a>
+                <a href="./faculty.html">Faculty</a>
+                <a href="./course_training.html">Courses & Training</a>
+                <a href="./about_efrei.html">About Efrei</a>
+                <a href="./calendar.html">Calendar</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="calendrier-intro">
+                <h1>Find out the next deadlines and exams on the Calendar bellow.</h1>
+
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button id="prev-month" class="calendar-nav-btn">&lt;</button>
+                        <h2 id="month-year" class="calendar-month-year"></h2>
+                        <button id="next-month" class="calendar-nav-btn">&gt;</button>
+                    </div>
+                    <div class="calendar-days-of-week">
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                        <div>Sun</div>
+                    </div>
+                    <div id="calendar-grid" class="calendar-grid"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="./about_us.html">About us. Click here to learn more.</a>
+            </nav>
+
+            <div class="footer_bottom">
+                <p>© 2026 Audrey Mallet & Nour Gmati.<br> All rights reserved.</p>
+                <img src="../img/logo_efrei_vide.png" alt="Efrei Logo" width="100">
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <footer>
-        <p> © 2026 Audrey Mallet & Nour Gmati.<br> All rights reserved.</p>
-        <nav>
-            <a href="./about_us.html">About us. Click here to learn more.</a>
-        </nav>
-        <img src="../media/efrei-logo.png" alt="Efrei Logo" width="100">
-    </footer>
 
-    <script src="../js/calendar.js"></script>
-</body>
-
+        <script src="../js/calendar.js"></script>
+    </body>
 </html>
