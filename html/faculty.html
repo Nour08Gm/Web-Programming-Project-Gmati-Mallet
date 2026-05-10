@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <audio src="../sound/swich.mp3" autoplay></audio>
 </head>
 
 <body>
@@ -17,126 +18,134 @@
                     <span class="page_name">Our Faculty</span>
                 </div>
 
-                    <div class="topbar_right">
-                        <form class="search_bar">
-                            <input type="text" placeholder="Search..." name="search">
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
+                <div class="topbar_right">
+                    <form class="search_bar">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
-            
-            <section id="calendrier-intro">
-                <h1>Find out the next event on the Calendar</h1> 
-                <p>Click the button below to access to the calendar and learn about the next permanence, deadline and exam.</p>
-                
-                <button type="button" onclick="window.location.href='./calendar.html';" class="btn">Calendar</button>
-            </section>
-            
-            <nav>
-                <a href="./home.html">Home</a>
-                <a href="./faculty.html">Faculty</a>
-                <a href="./course_training.html">Courses & Training</a>
-                <a href="./about_efrei.html">About Efrei</a>
-                <a href="./calendar.html">Calendar</a>
-            </nav>
-        </header>
+        </div>
 
-        <main id="faculty-page">
-            <section class="faculty-intro">
-                <h2>Meet Our Faculty</h2>
-                <p>Researchers professor and External consultant that are dedicated to shape the next generation of IT professionals</p>
-            </section>
-                <div class="faculty-grid">
-                    <article class="faculty-card">
-                        <img src="../img/asma_gabis.png" alt="Asma Gabis" class="prof-img">
-                        <div class="prof-info">
-                            <h3>Asma GABIS</h3>
-                            <p class="prof-title">Head of Computer Science Department & Computer Science Instructor</p>
-                            <p>She earned her State Engineering Degree in Computer Science in 2006 (ESI), followed by a Master’s degree in 2010. After obtaining her PhD in 2021, she joined Efrei in 2022.</p>
-                            <div class="linkedin-link">
-                                <a href="https://www.linkedin.com/in/asma-gabis-1ab439244/" target="_blank">
-                                    <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
-                                    <span>LinkedIn</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+        <section id="calendrier-intro">
+            <h1>Find out the next event on the Calendar</h1>
+            <p>Click the button below to access to the calendar and learn about the next permanence, deadline and exam.
+            </p>
 
-                    <article class="faculty-card">
-                        <img src="../img/rado_rakotonarivo.jpg" alt="Rado Rakotonarivo" class="prof-img">
-                        <div class="prof-info">
-                            <h3>Rado RAKOTONARIVO</h3>
-                            <p class="prof-title">Computer Science Instructor</p>
-                            <p>PhD in Computer Science from Sorbonne Paris Nord. Specializes in Mathematics and Applied Statistics. Joined Efrei in 2022.</p>
-                            <div class="linkedin-link">
-                                <a href="https://www.linkedin.com/in/radoraktn/" target="_blank">
-                                    <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
-                                    <span>LinkedIn</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+            <button type="button" onclick="window.location.href='./calendar.html';" class="btn">Calendar</button>
+        </section>
 
-                    <article class="faculty-card">
-                        <img src="../img/nicolas_flasque.png" alt="Nicolas Flasque" class="prof-img">
-                        <div class="prof-info">
-                            <h3>Nicolas FLASQUE</h3>
-                            <p class="prof-title">Computer Science Instructor</p>
-                            <p>PhD in Computer Science with over 20 years at Efrei. Expert in Python, C programming, and digital learning tools.</p>
-                            <div class="linkedin-link">
-                                <a href="https://www.linkedin.com/in/nicolas-flasque-48b25610/" target="_blank">
-                                    <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
-                                    <span>LinkedIn</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./faculty.html">Faculty</a>
+            <a href="./course_training.html">Courses & Training</a>
+            <a href="./about_efrei.html">About Efrei</a>
+            <a href="./calendar.html">Calendar</a>
+        </nav>
+    </header>
 
-                    <article class="faculty-card">
-                        <img src="../img/amir_chachoui.jpg" alt="Amir Chachoui" class="prof-img">
-                        <div class="prof-info">
-                            <h3>Amir CHACHOUI</h3>
-                            <p class="prof-title">Computer Science Instructor</p>
-                            <p>Master's in Information Systems Management. Specialist in Web, Mobile, and 3D development. Joined Efrei in 2025.</p>
-                            <div class="linkedin-link">
-                                <a href="https://www.linkedin.com/in/amir-chachoui-b54807194/" target="_blank">
-                                    <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
-                                    <span>LinkedIn</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    
-                    <article class="faculty-card">
-                        <img src="../img/lena_trebaul.jpg" alt="Léna Trebaul" class="prof-img">
-                            <div class="prof-info">
-                           <h3>Léna TREBAUL</h3>
-                           <p class="prof-title">Computer Science Instructor</p>
-                               <p>PhD in Biotechnology and researcher at Harvard Medical School. Specialist in Algorithms, Python, and Data/AI.</p>
-                                <div class="linkedin-link">
-                                    <a href="https://www.linkedin.com/in/lena-trebaul-75711b57/" target="_blank">
-                                       <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
-                                    <span>LinkedIn</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
+    <main id="faculty-page">
+        <section class="faculty-intro">
+            <h2>Meet Our Faculty</h2>
+            <p>Researchers professor and External consultant that are dedicated to shape the next generation of IT
+                professionals</p>
+        </section>
+        <div class="faculty-grid">
+            <article class="faculty-card">
+                <img src="../img/asma_gabis.png" alt="Asma Gabis" class="prof-img">
+                <div class="prof-info">
+                    <h3>Asma GABIS</h3>
+                    <p class="prof-title">Head of Computer Science Department & Computer Science Instructor</p>
+                    <p>She earned her State Engineering Degree in Computer Science in 2006 (ESI), followed by a Master’s
+                        degree in 2010. After obtaining her PhD in 2021, she joined Efrei in 2022.</p>
+                    <div class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/asma-gabis-1ab439244/" target="_blank">
+                            <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
-            </section>
-        </main>
+                </div>
+            </article>
 
-        <footer>
-            <nav>
-                <a href="./about_us.html">About us. Click here to learn more.</a>
-            </nav>
+            <article class="faculty-card">
+                <img src="../img/rado_rakotonarivo.jpg" alt="Rado Rakotonarivo" class="prof-img">
+                <div class="prof-info">
+                    <h3>Rado RAKOTONARIVO</h3>
+                    <p class="prof-title">Computer Science Instructor</p>
+                    <p>PhD in Computer Science from Sorbonne Paris Nord. Specializes in Mathematics and Applied
+                        Statistics. Joined Efrei in 2022.</p>
+                    <div class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/radoraktn/" target="_blank">
+                            <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
 
-            <div class="footer_bottom">
-                <p>© 2026 Audrey Mallet & Nour Gmati.<br> All rights reserved.</p>
-                <img src="../img/logo_efrei_vide.png" alt="Efrei Logo" width="100">
-            </div>
-        </footer>
-        
-        <script src="../js/script.js"></script>
-    </body>
+            <article class="faculty-card">
+                <img src="../img/nicolas_flasque.png" alt="Nicolas Flasque" class="prof-img">
+                <div class="prof-info">
+                    <h3>Nicolas FLASQUE</h3>
+                    <p class="prof-title">Computer Science Instructor</p>
+                    <p>PhD in Computer Science with over 20 years at Efrei. Expert in Python, C programming, and digital
+                        learning tools.</p>
+                    <div class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/nicolas-flasque-48b25610/" target="_blank">
+                            <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="faculty-card">
+                <img src="../img/amir_chachoui.jpg" alt="Amir Chachoui" class="prof-img">
+                <div class="prof-info">
+                    <h3>Amir CHACHOUI</h3>
+                    <p class="prof-title">Computer Science Instructor</p>
+                    <p>Master's in Information Systems Management. Specialist in Web, Mobile, and 3D development. Joined
+                        Efrei in 2025.</p>
+                    <div class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/amir-chachoui-b54807194/" target="_blank">
+                            <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="faculty-card">
+                <img src="../img/lena_trebaul.jpg" alt="Léna Trebaul" class="prof-img">
+                <div class="prof-info">
+                    <h3>Léna TREBAUL</h3>
+                    <p class="prof-title">Computer Science Instructor</p>
+                    <p>PhD in Biotechnology and researcher at Harvard Medical School. Specialist in Algorithms, Python,
+                        and Data/AI.</p>
+                    <div class="linkedin-link">
+                        <a href="https://www.linkedin.com/in/lena-trebaul-75711b57/" target="_blank">
+                            <img src="../img/logo_linkedin.png" alt="LinkedIn Logo" class="linkedin-icon">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="./about_us.html">About us. Click here to learn more.</a>
+        </nav>
+
+        <div class="footer_bottom">
+            <p>© 2026 Audrey Mallet & Nour Gmati.<br> All rights reserved.</p>
+            <img src="../img/logo_efrei_vide.png" alt="Efrei Logo" width="100">
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
 </html>
