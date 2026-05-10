@@ -409,6 +409,24 @@ article {
 
 /*------- SPECIFIC TO ABOUT_US.HTML -------*/
 
+.team-cards-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-cards-container .member-card {
+    flex: 1;
+    margin: 0;
+    transition: flex 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.team-cards-container .member-card:hover {
+    flex: 2;
+}
+
 .member-card {
     background-color: #ffffff;
     border: 2px solid #000000;
@@ -416,8 +434,8 @@ article {
     padding: 30px;
     margin: 25px auto;
     max-width: 800px;
-    text-align: left; 
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2); 
+    text-align: left;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: none;
 }
@@ -533,7 +551,7 @@ article {
     padding: 30px;
     margin: 25px auto;
     max-width: 800px;
-    text-align: left; 
+    text-align: left;
     transition: transform 0.3s ease;
     box-shadow: none;
 }
@@ -741,13 +759,16 @@ main {
     text-align: center;
 }
 
-#intro, #details, #academic-goals {
+#intro,
+#details,
+#academic-goals {
     padding: 40px, 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-#details img, .into-image img {
+#details img,
+.into-image img {
     border: 3px solid #000000;
     border-radius: 20px;
     margin: 20px 0;
@@ -763,7 +784,7 @@ main {
     margin-top: 40px;
 }
 
-.goals-container article{
+.goals-container article {
     background-color: #ffffff;
     border: 2px solid #000000;
     border-radius: 20px;
